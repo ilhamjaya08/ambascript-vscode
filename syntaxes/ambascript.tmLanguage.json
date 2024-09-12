@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Ambascript",
+	"patterns": [
+	  {
+		"include": "#keywords"
+	  },
+	  {
+		"include": "#strings"
+	  },
+	  {
+		"include": "#variables"
+	  },
+	  {
+		"include": "#functions"
+	  }
+	],
+	"repository": {
+	  "keywords": {
+		"patterns": [
+		  {
+			"name": "keyword.control.ambascript",
+			"match": "\\b(ba|batu|tu|akmw|kpnyh|kam)\\b"
+		  },
+		  {
+			"name": "storage.type.ambascript",
+			"match": "\\b(am|jmk|\\$)\\b"
+		  }
+		]
+	  },
+	  "strings": {
+		"name": "string.quoted.double.ambascript",
+		"begin": "\"",
+		"end": "\"",
+		"patterns": [
+		  {
+			"name": "constant.character.escape.ambascript",
+			"match": "\\\\."
+		  }
+		]
+	  },
+	  "variables": {
+		"patterns": [
+		  {
+			"name": "variable.other.ambascript",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+		  }
+		]
+	  },
+	  "functions": {
+		"patterns": [
+		  {
+			"name": "support.function.ambascript",
+			"match": "\\b(tam|kur|kal|bag)\\b"
+		  }
+		]
+	  }
+	},
+	"scopeName": "source.ambascript"
+  }
+  

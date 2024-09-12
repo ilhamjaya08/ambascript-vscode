@@ -1,0 +1,25 @@
+{
+  "name": "ambascript-language-support",
+  "displayName": "Ambascript Language Support",
+  "description": "Language support for Ambascript",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ambascript",
+      "aliases": ["Ambascript", "ambascript"],
+      "extensions": [".ambs"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ambascript",
+      "scopeName": "source.ambascript",
+      "path": "./syntaxes/ambascript.tmLanguage.json"
+    }]
+  }
+}
